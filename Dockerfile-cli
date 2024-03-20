@@ -1,0 +1,9 @@
+FROM python
+ENV TD_DATA=/home/traded/data 
+ENV TD_TMP=/home/traded/tmp
+ENV FDEVJRNDIR=/home/traded/journals
+ENV PYTHONIOENCODING=utf-8
+RUN apt-get update
+RUN python -m pip install --upgrade pip
+RUN pip install --upgrade tradedangerous
+CMD ["bash"]

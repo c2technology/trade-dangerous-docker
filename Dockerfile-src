@@ -1,0 +1,15 @@
+FROM python
+ENV TD_DATA=/home/traded/data 
+ENV TD_TMP=/home/traded/tmp
+ENV FDEVJRNDIR=/home/traded/journals
+ENV PYTHONIOENCODING=utf-8
+RUN apt-get update
+RUN python -m pip install --upgrade pip
+ADD trade-dangerous /app
+ADD EDDBlink-listener/eddblink_listener.py /app/tradedangerous
+WORKDIR /app
+RUN pip install .
+RUN pip install zmq
+WORKDIR /app/tradedangerous
+CMD ["python", "eddblink_listener.py"]
+

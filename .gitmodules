@@ -1,0 +1,6 @@
+[submodule "trade-dangerous"]
+	path = trade-dangerous
+	url = https://github.com/c2technology/trade-dangerous.git
+[submodule "EDDBlink-listener"]
+	path = EDDBlink-listener
+	url = git@github.com:c2technology/EDDBlink-listener.git

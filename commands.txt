@@ -1,0 +1,5 @@
+trade import -P eddblink -O skipvend,clean --merge-import
+trade import -P edcd -O commodities --merge-import
+trade import -P journal --merge-import
+trade run --no-planet --fleet N --show-jumps --limit 0 --age 1 --pad-size L --ls-max 4000 --routes 3 --prune-score 80 --prune-hops 3 --progress --summary --detail --color --ly-per 10.08 --empty-ly 17.82 --capacity 750 --credits 1000000 --from "SOL/Abraham Lincoln"
+trade run --no-planet --fleet N --show-jumps --limit 0 --age 1 --pad-size L --ls-max 4000 --routes 3 --prune-score 80 --prune-hops 3 --progress --summary --detail --color --ly-per 10.08 --empty-ly 17.82 --capacity 750 --credits 1000000 --from "YZ CETI/Clement Orbital"
